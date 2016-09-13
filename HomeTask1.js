@@ -1,32 +1,10 @@
-Home Task #1
-
-These tasks will help you to practice skills of working with Variables & Data Types, Conditions and Functions. You can use this Lesson draft as helper: lesson draft. Do tasks in 2 styles: ES5 (current JS version - var) and ES6 (new JS version - let / const).
-
-Your scripts for home task should be published as Gist on Github and sent to me.
-
-Variables
-
-Create next list of variables:
-
-name -- your name as String
-age -- your age as Number
-hasDriverLicense -- do you have driver license as Bool
-grades -- list of your grades for last 5 exams as Array
-person -- Object of your personality with all variables listed above
-After, print name, age and grades with console.log. Also, print your 2nd grade from grades array and person's Object age property.
-
-Conditions
-
-You need to create 2 number variables with random values. Then check, if first variable is bigger (tip: num1 > num2), print 'Number one is bigger', otherwise print 'Number two is bigger';
-
-Functions
-
-Create function which calculates sum of 3 arguments passed to it.
+//Home Task #1
 
 //ES 5:
+//Variables
 
 var name = 'Alexander';
-var age = 30
+var age = 30;
 var hasDriverLicense = true;
 var grades = [3, 5, 4, 2, 4];
 var person = {
@@ -35,7 +13,21 @@ var person = {
   hasDriverLicense : true,
   grades : [3, 5, 4, 2, 4]
 };
-    
 document.write(grades[1] + '<br>');
 document.write(person.name);
-After, print name, age and grades with console.log. Also, print your 2nd grade from grades array and person's Object age property.
+
+//Conditions
+
+var num1 = 5;
+var num2 = 7;
+if (num1 > num2) document.write('Number one is bigger')
+else document.write('Number two is bigger');
+
+//Functions
+var a = +prompt('a= ');
+var b = +prompt('b= ');
+var c = +prompt('c= ');
+function calc(a,b,c){
+  return a+b+c;
+}
+document.write(calc(a,b,c));
